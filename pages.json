@@ -6,7 +6,25 @@
 				"navigationBarTitleText": "uni-app"
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/cloudDb/cloudDb",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "cloudDb",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/cloudfunc/cloudfunc",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "cloudfunc",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",

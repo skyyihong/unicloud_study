@@ -1,8 +1,8 @@
 <template>
   <view class="content">
-    <image class="logo" src="/static/logo.png"></image>
-    <view class="text-area">
-      <text class="title">{{ title }}</text>
+		
+		<navigator :url="item.url" open-type="navigate" style="background-color: red; margin-bottom: 2px;" v-for="(item,index) in btnInfo"> {{item.name}}</navigator>
+		
     </view>
   </view>
 </template>
@@ -11,22 +11,13 @@
 export default {
   data() {
     return {
-      title: 'Hello'
+      btnInfo:[
+		  {url:'/pages/cloudDb/cloudDb',name:'云数据库操作'},
+		  {url:'/pages/cloudfunc/cloudfunc',name:'云函数操作'},
+		  ]
     }
   },
-  onLoad() {
-    uniCloud
-      .callFunction({
-        name: 'mycloudfunc',
-        data: {
-          name: 'hongyan',
-          age: 18
-        }
-      })
-      .then((res) => {
-        console.log(res)
-      })
-  },
+  onLoad() {},
   methods: {}
 }
 </script>
