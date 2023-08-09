@@ -1,0 +1,9 @@
+{
+  "name": "mycloudobj",
+  "dependencies": {
+    "utils-common": "file:../common/utils-common"
+  },
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

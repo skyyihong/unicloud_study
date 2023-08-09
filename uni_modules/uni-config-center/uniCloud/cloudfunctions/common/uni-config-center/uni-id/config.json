@@ -1,0 +1,51 @@
+{
+	"passwordSecret": [{
+			"type": "hmac-sha256",
+			"version": 1
+		},
+		{
+			"type": "hmac-sha256",
+			"version": 2,
+			"value": "1q2w3e4r5t"
+		}
+	],
+	"passwordStrength": "medium",
+	"tokenSecret": "fsajikfpasjfaf",
+	"requestAuthSecret": "",
+	"tokenExpiresIn": 7200,
+	"tokenExpiresThreshold": 3600,
+	"maxTokenLength": 10,
+	"passwordErrorLimit": 6,
+	"passwordErrorRetryTime": 3600,
+	"autoSetInviteCode": false,
+	"forceInviteCode": false,
+	"idCardCertifyLimit": 1,
+	"realNameCertifyLimit": 5,
+	"sensitiveInfoEncryptSecret": "",
+	"frvNeedAlivePhoto": false,
+	"userRegisterDefaultRole": ["user"],
+	"web": {
+		"tokenExpiresIn": 7200,
+		"tokenExpiresThreshold": 3600,
+		"oauth": {
+			"weixin-h5": {
+				"appid": "wx4193794f113a4c9e",
+				"appsecret": "a9b174e9742bbbab82c4ca671d061bd8"
+			},
+			"weixin-web": {
+				"appid": "wx4193794f113a4c9e",
+				"appsecret": "a9b174e9742bbbab82c4ca671d061bd8"
+			}
+		}
+	},
+	"mp-weixin": {
+		"tokenExpiresIn": 259200,
+		"tokenExpiresThreshold": 86400,
+		"oauth": {
+			"weixin": {
+				"appid": "wx4193794f113a4c9e",
+				"appsecret": "a9b174e9742bbbab82c4ca671d061bd8"
+			}
+		}
+	}
+}

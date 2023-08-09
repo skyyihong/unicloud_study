@@ -1,0 +1,1 @@
+<view class="content"><view>登录云数据库页面需要登录，admin123/admin1234</view><block wx:for="{{btnInfo}}" wx:for-item="item" wx:for-index="index" wx:key="index"><navigator style="background-color:pink;margin-bottom:2px;" url="{{item.url}}" open-type="navigate">{{''+item.name}}</navigator></block></view>

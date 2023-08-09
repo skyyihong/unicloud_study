@@ -1,0 +1,1 @@
+<view class="data-v-172ab40c"><view class="data-v-172ab40c">1.通过创建云函数，并运行云函数来操作数据库</view><button data-event-opts="{{[['tap',[['getCloudFunc',['$event']]]]]}}" bindtap="__e" class="data-v-172ab40c">操作云函数</button></view>

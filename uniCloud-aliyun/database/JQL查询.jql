@@ -9,4 +9,13 @@
 // 详细JQL语法，请参考：https://uniapp.dcloud.net.cn/uniCloud/jql.html
 
 // 下面示例查询uni-id-users表的所有数据
-db.collection('uni-id-users').get();
+// db.collection('opendb-city-china').get({
+// 	getTreePath: {
+// 		startWith: "_id=='64c77cf0466d416d3030e5d1'",
+// 		limitLevel: 5
+// 	}
+// })
+// db.collection('opendb-city-china').where("name=='广东省'").get()
+
+db.collection('users').field('dateToString(add(new Date(0),register_date),"%Y-%m-%d","+0800") as date,username')
+	.groupBy('date').groupField('count(*) as count').get()

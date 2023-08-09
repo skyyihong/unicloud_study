@@ -1,5 +1,6 @@
 <template>
   <view>
+    <view>云函数和云对象操作数据库不需要scheme，而客户端(clientDB)操作数据库需要scheme</view>
     <view>1.add get 操作数据库</view>
     <view>2.doc field limit orderBy操作</view>
     <view class="">3.where 多种用法 注意看看db.command中 and or的组合使用，RegExp</view>

@@ -1,7 +1,7 @@
 <template>
   <view class="content">
-		
-		<navigator :url="item.url" open-type="navigate" style="background-color: red; margin-bottom: 2px;" v-for="(item,index) in btnInfo"> {{item.name}}</navigator>
+		<view>登录云数据库页面需要登录，admin123/admin1234</view>
+		<navigator :url="item.url" open-type="navigate" style="background-color: pink; margin-bottom: 2px;" v-for="(item,index) in btnInfo"  :key="index"> {{item.name}}</navigator>
 		
     </view>
   </view>
@@ -14,10 +14,19 @@ export default {
       btnInfo:[
 		  {url:'/pages/cloudDb/cloudDb',name:'云数据库操作'},
 		  {url:'/pages/cloudfunc/cloudfunc',name:'云函数操作'},
+		  {url:'/pages/cloudobj/cloudobj',name:'云对象操作'},
+		  {url:'/pages/useschema/useschema',name:'云数据库schema操作'},
+		  {url:'/pages/commmodule/commmodule',name:'云公用模块'},
+		  {url:'/pages/jql_config/jql_config',name:'JQL语法使用'},
+		  {url:'/pages/mplogin/mplogin',name:'小程序登录'}
 		  ]
     }
   },
-  onLoad() {},
+  onLoad(options) {
+	  // uniCloud.onNeedLogin(res=>{
+		 //  console.log(res)
+	  // })
+  },
   methods: {}
 }
 </script>

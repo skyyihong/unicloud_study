@@ -1,0 +1,7 @@
+{
+  "name": "mplogin",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}
